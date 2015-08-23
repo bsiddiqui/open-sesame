@@ -14,16 +14,13 @@ server.route({
   handler: function (request, reply) {
     var resp = new twilio.TwimlResponse()
 
-    resp.say('Welcome to Twilio!')
+    resp
     .pause({ length: 2 })
     .say('welcome home', {
       voice: 'woman',
       language: 'en-gb'
     })
-    .play({
-      url: 'http://jetcityorange.com/dtmf/DTMF-9.mp3',
-      loop: 2
-    })
+    .play('http://jetcityorange.com/dtmf/DTMF-9.mp3', { loop: 2 })
     .hangup()
 
     reply(resp.toString())
