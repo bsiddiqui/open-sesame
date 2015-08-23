@@ -1,0 +1,19 @@
+{
+  "name": "open-sesame",
+  "version": "1.0.0",
+  "description": "auto open apartment door",
+  "main": "server.js",
+  "scripts": {
+    "test": "lab test.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cds/progressive-quote.git"
+  },
+  "author": "Basil Siddiqui <basil.siddiqui@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "hapi": "^9.0.3",
+    "twilio": "^2.3.0"
+  }
+}
